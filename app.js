@@ -10,17 +10,19 @@ function ready() {
    
 }
 function changeColor(cell){
+    document.querySelector('select').value="black";
      temp=selectedcell;
 selectedcell=cell;
 
 temp.style.borderColor="black";
 selectedcell.style.borderColor="#1a75ff";
+
 }
 
 function getcolor(rColors) {
     
     var selectedValue = rColors.value;
     selectedcell.style.backgroundColor = selectedValue;
-
+    selectedValue=null;
 
 }
