@@ -7,50 +7,84 @@
 </head>
 
 <body onload="ready()">
-    <select id="rColors" onchange="getcolor(this)">
-        <option value="#FFFF00" style="background-color: Yellow;"> </option>
-        <option value="#FFA500" style="background-color: Orange;"></option>
-        <option value="#FF0000" style="background-color: Red;"></option>
-        <option value="#ffffff" style="background-color: White;"></option>
-        <option value="#228B22" style="background-color: Green;"></option>
-        <option value="	#0000FF" style="background-color: Blue;"></option>
-    </select>
-    <div id="table" class="table">
+    <p1>Select Color<select id="rColors" onchange="getcolor(this)">
 
-        <div id="r1" class="row" background-color="Red">
-            <div id="00" class="cell">
+            <option value="#F4B400" style="background-color: #F4B400;"></br></option>
+            <option value="#FF6600" style="background-color: #FF6600;">      </option>
+            <option value="#DB4437" style="background-color: #DB4437;">        </option>
+            <option value="#ffffff" style="background-color: White;">     </option>
+            <option value="#0F9D58" style="background-color: #0F9D58;">     </option>
+            <option value="#4285F4" style="background-color: #4285F4;">        </option>
+        </select></p1>
 
-
-            </div>
-            <div id="01" class="cell" onclick="fun(this);">
-            </div>
-            <div id="02" class="cell">
-            </div>
-
-
-        </div>
-
-        <div id="r2" class="row">
-            <div id="sys54" class="cell">
-            </div>
-            <div id="sys53" class="cell">
-            </div>
-            <div id="sys52" class="cell">
-            </div>
-
-        </div>
-
-        <div id="r3" class="row">
-            <div id="sys43" class="cell">
-            </div>
-            <div id="sys42" class="cell">
-            </div>
-            <div id="sys41" class="cell">
-
-            </div>
-
-
-        </div>
 </body>
+<div class="rubikscube">
+    <div id="face1" class="face1">
+
+        <div id="f1r1" class="row" background-color="Red">
+            <div id="1" class="cell" onclick="changeColor(this);" onblur="highlight(this)">
+            </div>
+            <div id="2" class="cell" onclick="changeColor(this);">
+            </div>
+            <div id="3" class="cell" onclick="changeColor(this);">
+            </div>
+        </div>
+
+        <div id="f1r2" class="row">
+            <div id="4" class="cell" onclick="changeColor(this);">
+            </div>
+            <div id="5" class="cell" onclick="changeColor(this);">
+            </div>
+            <div id="6" class="cell" onclick="changeColor(this);">
+            </div>
+
+        </div>
+
+        <div id="f1r3" class="row">
+            <div id="7" class="cell" onclick="changeColor(this);">
+            </div>
+            <div id="8" class="cell" onclick="changeColor(this);">
+            </div>
+            <div id="9" class="cell" onclick="changeColor(this);">
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="face2" class="face1" >
+
+            <div id="f2r1" class="row" >
+                <div id="10" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="11" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="12" class="cell" onclick="changeColor(this);">
+                </div>
+            </div>
+    
+            <div id="f2r2" class="row">
+                <div id="13" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="14" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="15" class="cell" onclick="changeColor(this);">
+                </div>
+    
+            </div>
+    
+            <div id="f2r3" class="row">
+                <div id="16" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="17" class="cell" onclick="changeColor(this);">
+                </div>
+                <div id="18" class="cell" onclick="changeColor(this);">
+    
+                </div>
+    
+    
+            </div>
+        </div>
+</div>
 
 </html>

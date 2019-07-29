@@ -1,7 +1,5 @@
-var sys43;
-var color;
-var test = 'xyz';
-var cells = [];
+
+var selectedcell;
 
 function ready() {
     sys43 = document.getElementById('sys43');
@@ -9,16 +7,17 @@ function ready() {
     cells = document.getElementsByClassName('cell');
     console.log(cells);
 }
-
-
-function fun(elem) {
-    sys43 = elem;
+function changeColor(cell){
+    var temp=selectedcell;
+selectedcell=cell;
+temp.style.borderColor="black";
+selectedcell.style.borderColor="#1a75ff";
 }
 
 function getcolor(rColors) {
-    var selectedColor = rColors.options[rColors.selectedIndex].innerHTML;
+    
     var selectedValue = rColors.value;
-    sys43.style.backgroundColor = selectedValue;
-    //document.getElementById('sys43').style.backgroundColor = selectedValue;
+    selectedcell.style.backgroundColor = selectedValue;
+    
 
 }

@@ -1,4 +1,4 @@
-div.table {
+div.face1 {
     display: table;
     border-radius: 10px;
 }
@@ -13,8 +13,10 @@ div.row {
     margin-right: 50px;
     margin-left: 50px;
 }
-
-.cell {
+select{
+    padding: 1%;
+}
+div.cell {
     display: table-cell;
     border-style: solid;
     border-color: black;
@@ -29,7 +31,35 @@ div.row {
     background-color: grey;
     border-radius: 8px;
 }
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    padding: 10%;
+  }
+.cell:hover{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
 
-.green {
-    background-color: green;
+.rubikscube{
+    align-self: center;
+    padding: 5%;
+ 
+    border: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+#face1{
+    padding:5%;
+    padding-bottom: 1%;
+}
+#face2{
+    padding:5%;
+    padding-top: 1%;
+}
+#rColors *{
+    border-radius: 130px;
 }
