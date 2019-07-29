@@ -3,11 +3,11 @@
 
 <head>
     <link rel="stylesheet" href="main.css">
-    <script src="app.js"></script>
+  
 </head>
 
 <body onload="ready()">
-    <p1>Select Color<select id="rColors" onchange="getcolor(this)">
+    <p1>Select Color<select id="rColors" class="form-control" onchange="getcolor(event)">
 
             <option value="#F4B400" style="background-color: #F4B400;"></br></option>
             <option value="#FF6600" style="background-color: #FF6600;"> </option>
@@ -16,7 +16,7 @@
             <option value="#0F9D58" style="background-color: #0F9D58;"> </option>
             <option value="#4285F4" style="background-color: #4285F4;"> </option>
         </select></p1>
-
+       
 </body>
 <div id="wrapCube" class="flatView">
     <div id="face1">

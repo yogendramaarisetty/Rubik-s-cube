@@ -2,6 +2,9 @@
     width:700px;
     padding: 7%;
 }
+.select{
+    width: 100px;
+}
 
 div.row {
     display: table-row;
@@ -21,7 +24,7 @@ div.cell {
     display: table-cell;
     border-style: solid;
     border-color: black;
-    border-width: 3px;
+    border-width: 4px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
