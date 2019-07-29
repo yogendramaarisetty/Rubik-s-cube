@@ -15,7 +15,7 @@ function changeColor(cell){
 selectedcell=cell;
 
 temp.style.borderColor="black";
-selectedcell.style.borderColor="#1a75ff";
+selectedcell.style.borderColor="rgb(226, 4, 226)";
 
 }
 
